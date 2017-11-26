@@ -1,0 +1,67 @@
+/*--STYLE FOR THE HEADER--*/
+
+header {
+    font-family: "Montserrat",'Helvetica Neue',Helvetica,Arial,sans-serif;  
+    background-color: rgba(27, 38, 49, 0.7); /*opacidad para el navegador*/
+    position: fixed;
+    top: 0; /*Se peque la parte duperior del navegador*/
+    width: 100%; /*Tomara todo el navegador*/
+    height: 90px; /*Alto de header*/
+    font-weight: bolder; /*El navegador tendra letras gruesas*/
+    z-index: 1000; /* 6 z-index-> sirve para trabajar por capas (traer adelante on retroceder capas antes o delante de otro)*/ 
+}
+
+span {
+    position: absolute;
+    margin-left: 400px;
+    padding: 5px;
+    color: white;
+    font-size: 1.5em;
+    transform: translateY(-50%);/*debajo de su padre*/
+    top: 50%; /*siempre va junto a transalate para afectar a su padre*/
+    cursor: pointer;
+    
+}
+
+/*CONVIENE UN SECTION PARA APLICAR CAMBIOS A TODOS EN UNO*/
+#welcome {
+    margin-top: 140px;    
+}
+
+section {
+    margin-top: 50px;
+    text-align: center; /*centramos toda nuestra seccion2*/
+}
+
+div {
+    display: inline-block;
+    width: 33%;
+}
+
+#inicio {
+    width: 600px;
+}
+
+img { /*Cambiamos el tamaño de la imagen mediante slector atributos*/
+    width: 300px;
+}
+
+ul {
+    list-style:none;
+}
+
+li{
+    margin: 10px;
+}
+
+
+#footer {
+    position: fixed;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 3px;
+    background: #2c3e50;
+    font-family: "Montserrat",'Helvetica Neue',Helvetica,Arial,sans-serif;  
+}
